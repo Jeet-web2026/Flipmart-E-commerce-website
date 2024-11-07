@@ -11,4 +11,27 @@
     font-style: normal;
 }
 
+.font-500{
+    font-weight: 500;
+}
+
+.no-decoration{
+    text-decoration: none;
+}
+
 /* universal css styling */
+
+/* navbar start */
+#top-nav {
+    background-color: #F6720E;
+}
+
+#mid-nav {
+    background-color: #F6720E;
+}
+
+nav {
+    background-color: #F6720E;
+}
+
+/* navbar end */
