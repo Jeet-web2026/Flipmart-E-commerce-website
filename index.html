@@ -38,6 +38,9 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="styling/landing-page.css">
 
+    <!-- swiper js css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -142,49 +145,84 @@
 
     <!-- body start -->
     <main id="main-body">
-        <div class="container-fluid px-5">
+        <div class="container-fluid px-5 py-4">
             <div class="row" style="--bs-gutter-x: 0rem;">
                 <div class="col-md-3">
                     <nav class="navbar navbar-expand-lg bg-transparent py-0">
-                        <div class="container-fluid flex-column bg-white">
+                        <div class="container-fluid px-0 flex-column bg-white">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                                data-bs-target="#categories" aria-controls="categories" aria-expanded="false"
+                                aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav py-3 mb-lg-0  flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link text-uppercase" href="#">Categories</a>
+                            <div class="collapse navbar-collapse w-100" id="categories">
+                                <ul class="navbar-nav mb-lg-0 flex-column w-100">
+                                    <li class="nav-item px-2" style="background-color: #f6720e;">
+                                        <a class="nav-link text-uppercase text-light fw-bold fs-5"
+                                            href="#">Categories</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item px-2">
                                         <a class="nav-link" href="#">New Arrivals</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item px-2">
                                         <a class="nav-link" href="#">Best Sellers</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Clothing<i class="bi bi-plus-lg"></i></a>
+                                    <li class="nav-item px-2" id="colContent">
+                                        <a class="nav-link d-flex justify-content-between" href="#">Clothing<i
+                                                class="bi bi-plus-lg"></i></a>
+                                        <div class="px-2">
+                                            <a class="nav-link d-flex justify-content-between" href="#">Mens Clothes</a>
+                                            <a class="nav-link d-flex justify-content-between" href="#">Womens
+                                                Clothes</a>
+                                            <a class="nav-link d-flex justify-content-between" href="#">Kids Clothes</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Footwear</a>
+                                    <li class="nav-item px-2" id="colContent-foot">
+                                        <a class="nav-link d-flex justify-content-between" href="#">Footwear<i
+                                                class="bi bi-plus-lg"></i></a>
+                                        <div class="px-2">
+                                            <a class="nav-link d-flex justify-content-between" href="#">Mens
+                                                Footwear</a>
+                                            <a class="nav-link d-flex justify-content-between" href="#">Womens
+                                                Footwear</a>
+                                            <a class="nav-link d-flex justify-content-between" href="#">Kids
+                                                Footwear</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Accessories</a>
+                                    <li class="nav-item px-2" id="colContent-Accessories">
+                                        <a class="nav-link d-flex justify-content-between" href="#">Accessories<i
+                                                class="bi bi-plus-lg"></i></a>
+                                        <div class="px-2">
+                                            <a class="nav-link d-flex justify-content-between" href="#">Mens
+                                                Accessories</a>
+                                            <a class="nav-link d-flex justify-content-between" href="#">Womens
+                                                Accessories</a>
+                                            <a class="nav-link d-flex justify-content-between" href="#">Kids
+                                                Accessories</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item px-2">
                                         <a class="nav-link" href="#">Activewear & Athleisure</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Seasonal Collections</a>
+                                    <li class="nav-item px-2" id="colContent-Seasonal">
+                                        <a class="nav-link d-flex justify-content-between" href="#">Seasonal
+                                            Collections<i class="bi bi-plus-lg"></i></a>
+                                        <div class="px-2">
+                                            <a class="nav-link d-flex justify-content-between" href="#">Mens
+                                                Collections</a>
+                                            <a class="nav-link d-flex justify-content-between" href="#">Womens
+                                                Collections</a>
+                                            <a class="nav-link d-flex justify-content-between" href="#">Kids
+                                                Collections</a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item px-2">
                                         <a class="nav-link" href="#">Sustainable & Eco-Friendly</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item px-2">
                                         <a class="nav-link" href="#">Plus Size & Extended Sizes</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item px-2">
                                         <a class="nav-link" href="#">Sale & Clearance</a>
                                     </li>
                                 </ul>
@@ -192,7 +230,50 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6 px-4">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/free-photo/couple-winter-cloths-studio_1303-5887.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/free-photo/close-up-flannel-shirt-detail_23-2149575383.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/free-photo/portrait-happy-gay-couple-spending-time-together-hugging-street_58466-11434.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/premium-photo/baby-clothes-accessories-wooden-background_392895-107802.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/free-photo/male-holiday-objects_23-2147635502.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-5">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/free-photo/retro-camera-watch-bowtie-glasses_144627-12256.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/premium-photo/interior-decor-mockup-with-chinese-ginger-jars-corals_154979-205.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-7">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/free-photo/still-life-teenager-s-desk_23-2149371274.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-8">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://img.freepik.com/premium-photo/3d-render-happy-durga-puja-diwali-minimalist-modern-mockup-smartphones-presentation-display-products-advertising-design_460848-5164.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid"
+                                    alt="img-9">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
                 <div class="col-md-3"></div>
             </div>
         </div>
@@ -212,10 +293,59 @@
     integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+<!-- swiper js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <!-- bootstrap js cdn -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
+
+<script>
+    $(document).ready(function () {
+
+        $('#colContent').find('div').hide();
+        $('#colContent').on('click', function () {
+            $(this).find('div').slideToggle();
+        });
+
+
+        $('#colContent-foot').find('div').hide();
+        $('#colContent-foot').on('click', function () {
+            $(this).find('div').slideToggle();
+        });
+
+        $('#colContent-Accessories').find('div').hide();
+        $('#colContent-Accessories').on('click', function () {
+            $(this).find('div').slideToggle();
+        });
+
+
+        $('#colContent-Seasonal').find('div').hide();
+        $('#colContent-Seasonal').on('click', function () {
+            $(this).find('div').slideToggle();
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            loop: true,
+            autoplay: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    });
+</script>
 
 </html>
