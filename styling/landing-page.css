@@ -35,3 +35,10 @@ nav {
 }
 
 /* navbar end */
+
+/* body start */
+#main-body{
+    background-color: #f7f7f7;
+    height: 100%;
+}
+/* body end */
