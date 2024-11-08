@@ -42,12 +42,12 @@ nav {
     height: 100vh;
 }
 
-#main-body .swiper {
+#main-body .col-md-6 .swiper {
     width: 100%;
     height: 100%;
 }
 
-#main-body .swiper-slide {
+#main-body .col-md-6 .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -57,23 +57,38 @@ nav {
     height: 27.813rem;
 }
 
-#main-body .swiper-slide img {
+#main-body .col-md-6 .swiper-slide img {
     display: block;
     width: 100%;
     object-fit: cover;
     height: 100%;
 }
 
-#main-body .swiper-button-next{
+#main-body .col-md-6 .swiper-button-next{
     color: #fff !important;
     background-color: #F6720E !important;
     padding: 30px 20px;
 }
-#main-body .swiper-button-prev{
+#main-body .col-md-6 .swiper-button-prev{
     color: #fff !important;
     background-color: #F6720E !important;
     padding: 30px 20px;
 }
+
+#main-body .col-md-3 .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  #main-body .col-md-3 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  #main-body .col-md-3 .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
 
 
 /* body end */
