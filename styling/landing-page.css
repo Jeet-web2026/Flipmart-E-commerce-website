@@ -34,13 +34,13 @@ nav {
     background-color: #F6720E;
 }
 
+body {
+    background-color: #f7f7f7;
+}
+
 /* navbar end */
 
 /* body start */
-#main-body {
-    background-color: #f7f7f7;
-    height: 100vh;
-}
 
 #main-body .col-md-6 .swiper {
     width: 100%;
@@ -64,12 +64,13 @@ nav {
     height: 100%;
 }
 
-#main-body .col-md-6 .swiper-button-next{
+#main-body .col-md-6 .swiper-button-next {
     color: #fff !important;
     background-color: #F6720E !important;
     padding: 30px 20px;
 }
-#main-body .col-md-6 .swiper-button-prev{
+
+#main-body .col-md-6 .swiper-button-prev {
     color: #fff !important;
     background-color: #F6720E !important;
     padding: 30px 20px;
@@ -78,42 +79,65 @@ nav {
 #main-body .col-md-3 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  #main-body .col-md-3 .swiper-slide {
+#main-body .col-md-3 .swiper-slide {
     background-position: center;
     background-size: cover;
-  }
+}
 
-  #main-body .col-md-3 .swiper-slide img {
+#main-body .col-md-3 .swiper-slide img {
     display: block;
     width: 100%;
     height: 280px;
     object-fit: cover;
-  }
+}
 
-  #main-body .col-md-3 .swiper-cube-shadow {
+#main-body .col-md-3 .swiper-cube-shadow {
     display: none;
-  }
+}
 
-  #main-body .ui-menu { 
+#main-body .ui-menu {
     width: 250px;
     border: 0px;
+}
+
+#main-body .ui-menu .ui-front {
+    background-color: #f7f6f6;
     padding: 10px;
-   }
+}
 
-   #main-body .ui-menu .nav-link:hover{ 
+#main-body .ui-menu .nav-link:hover {
     transition: 0.3s ease-in-out;
-   }
+}
 
-  #main-body .ui-state-active{
+#main-body .ui-state-active {
     background-color: transparent;
     border-color: transparent;
     color: #111;
-  }
+}
 
-  #main-body .ui-state-active .ui-icon{
-    background-image: none;
-  }
+#main-body .ui-state-active .ui-icon {
+    background-image: url('https://img.freepik.com/free-vector/vector-damask-seamless-pattern-background-classical-luxury-old-fashioned-damask-ornament-royal-victorian-seamless-texture-wallpapers-textile-wrapping-exquisite-floral-baroque-template_1217-738.jpg?uid=P119104888&ga=GA1.1.1106605636.1719834042&semt=ais_hybrid');
+}
 
 /* body end */
+
+/* content start */
+#content .latest-img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#content .col-md-9 .col .card{
+    text-align: center;
+    align-items: center;
+}
+
+#content .col-md-9 .col .card img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+/* content end */
