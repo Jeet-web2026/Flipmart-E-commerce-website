@@ -96,5 +96,24 @@ nav {
     display: none;
   }
 
+  #main-body .ui-menu { 
+    width: 250px;
+    border: 0px;
+    padding: 10px;
+   }
+
+   #main-body .ui-menu .nav-link:hover{ 
+    transition: 0.3s ease-in-out;
+   }
+
+  #main-body .ui-state-active{
+    background-color: transparent;
+    border-color: transparent;
+    color: #111;
+  }
+
+  #main-body .ui-state-active .ui-icon{
+    background-image: none;
+  }
 
 /* body end */
