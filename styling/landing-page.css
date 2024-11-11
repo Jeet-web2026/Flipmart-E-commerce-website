@@ -145,6 +145,16 @@ body {
     border-radius: 50%;
 }
 
+#content .col-md-9 .responsive-slickSlider-withcategories .card img{
+    height: 150px;
+    width: 87.5%;
+    border-radius: 0px;
+}
+
+#content .col-md-9 .responsive-slickSlider-withcategories .card-body{
+    background-color: #80808026;
+}
+
 #content .responsive-slickSlider-withcategories .slick-next{
     position: absolute;
     top: -8%;
