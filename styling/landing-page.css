@@ -151,6 +151,10 @@ body {
     border-radius: 0px;
 }
 
+#content .col-md-9 .responsive-slickSlider-withcategories .card{
+    padding-bottom: 15px;
+}
+
 #content .col-md-9 .responsive-slickSlider-withcategories .card-body{
     background-color: #80808026;
 }
