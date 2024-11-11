@@ -149,6 +149,7 @@ body {
     position: absolute;
     top: -8%;
     right: 1%;
+    background-color: #F6720E;
     width: 27px;
     height: 27px;
 }
@@ -161,4 +162,11 @@ body {
     width: 27px;
     height: 27px;
 }
+
+/* #content .responsive-slickSlider-withcategories .featuring-functions{
+    position: absolute;
+    background-color: #1111119e;
+} */
+
+
 /* content end */
