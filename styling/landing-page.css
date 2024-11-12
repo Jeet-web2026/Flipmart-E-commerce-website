@@ -19,7 +19,7 @@
     text-decoration: none;
 }
 
-.card{
+.card {
     border-radius: 0px;
 }
 
@@ -128,38 +128,38 @@ body {
 /* body end */
 
 /* content start */
-#content .latest-img{
+#content .latest-img {
     height: 25.873221216041397vh;
     width: 100%;
     object-fit: cover;
 }
 
-#content .col-md-9 .col .card{
+#content .col-md-9 .col .card {
     text-align: center;
     align-items: center;
 }
 
-#content .col-md-9 .col .card img{
+#content .col-md-9 .col .card img {
     height: 19.404915912031047vh;
     width: 19.404915912031047vh;
     border-radius: 50%;
 }
 
-#content .col-md-9 .responsive-slickSlider-withcategories .card img{
+#content .col-md-9 .responsive-slickSlider-withcategories .card img {
     height: 19.404915912031047vh;
     width: 87.5%;
     border-radius: 0px;
 }
 
-#content .col-md-9 .responsive-slickSlider-withcategories .card{
+#content .col-md-9 .responsive-slickSlider-withcategories .card {
     padding-bottom: 15px;
 }
 
-#content .col-md-9 .responsive-slickSlider-withcategories .card-body{
+#content .col-md-9 .responsive-slickSlider-withcategories .card-body {
     background-color: #80808026;
 }
 
-#content .responsive-slickSlider-withcategories .slick-next{
+#content .responsive-slickSlider-withcategories .slick-next {
     position: absolute;
     top: -8%;
     right: 1%;
@@ -168,7 +168,7 @@ body {
     height: 27px;
 }
 
-#content .responsive-slickSlider-withcategories .slick-prev{
+#content .responsive-slickSlider-withcategories .slick-prev {
     position: absolute;
     top: -8%;
     left: 94%;
@@ -181,24 +181,61 @@ body {
 /* content end */
 
 /* amezing-products start */
-#amezing-products .col-md-9 .row .col-md-6 .card img{
+#amezing-products .col-md-9 .row .col-md-6 .card img {
     height: 23vh;
     width: 100%;
 }
 
-#amezing-products .col-md-9 .row .col-md-6 .card{
+#amezing-products .col-md-9 .row .col-md-6 .card {
     border: none;
 }
 
-#amezing-products .col-md-3{
+#amezing-products .col-md-3 {
     margin-top: -15vh;
     height: 38.2vh;
 }
 
-#amezing-products .col-md-3 .justify-content-start img{
+#amezing-products .col-md-3 .justify-content-start img {
     height: 60px;
     border-radius: 50%;
     width: 60px;
 }
 
 /* amezing-products end */
+
+/* special-products start */
+#special-products .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#special-products .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#special-products .swiper-button-next {
+    color: #F6720E;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #f6720e;
+    border-radius: 50%;
+    right: 0%;
+}
+#special-products .swiper-button-prev {
+    color: #F6720E;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #f6720e;
+    border-radius: 50%;
+    left: 0%;
+}
+
+/* special-products end */

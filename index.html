@@ -376,7 +376,7 @@
         <div class="container-fluid px-5 pb-4">
             <div class="row" style="--bs-gutter-x: 0rem;">
                 <div class="col-md-3">
-                    <div class="card border-0 shadow" style="border-radius: 0px;">
+                    <div class="card border-0" style="border-radius: 0px;">
                         <h5 class="text-light text-uppercase py-2 ps-3 fw-bold mb-0" style="background-color: #f6720e;">
                             New
                             Arrivals</h5>
@@ -632,7 +632,7 @@
         <div class="container-fluid px-5 pb-3">
             <div class="row" style="--bs-gutter-x: 0rem;">
                 <div class="col-md-3">
-                    <div class="card h-100 border-0 shadow">
+                    <div class="card h-100 border-0">
                         <div class="card-body p-0">
                             <div class="card border-0">
                                 <div class="card-body p-0">
@@ -646,7 +646,8 @@
                                         <div class="ps-3">
                                             <a class="nav-link text-capitalize text-dark fw-bold shadow-none border-0 mb-0"
                                                 href="">free delivery</a>
-                                            <a class="mb-0 nav-link text-capitalize" href="">free delivery after ₹500/-</a>
+                                            <a class="mb-0 nav-link text-capitalize" href="">free delivery after
+                                                ₹500/-</a>
                                         </div>
                                     </div>
                                     <hr>
@@ -670,7 +671,8 @@
                                         <div class="ps-3">
                                             <a class="nav-link text-capitalize text-dark fw-bold shadow-none border-0 mb-0"
                                                 href="">special gift card</a>
-                                            <a class="mb-0 nav-link text-capitalize" href="">Exiting gift voucher and more</a>
+                                            <a class="mb-0 nav-link text-capitalize" href="">Exiting gift voucher and
+                                                more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -738,6 +740,48 @@
         </div>
     </section>
     <!-- amazing products section end -->
+
+    <!-- special-products start -->
+    <section id="special-products">
+        <div class="container-fluid px-5">
+            <div class="row pb-3" style="--bs-gutter-x: 0rem;">
+                <div class="col-md-3">
+                    <div class="card border-0 h-100">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 ps-4">
+                    <div class="card border-0">
+                        <div class="card-body" style="border-left: 4px solid #f6720e;">
+                            <p class="card-text text-uppercase font-500 mb-0">Special products</p>
+                        </div>
+                    </div>
+                    <div class="swiper special-products-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-button-next shadow"></div>
+                        <div class="swiper-button-prev shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- special-products end -->
 
 
 </body>
@@ -932,6 +976,31 @@
                 delay: 2650,
                 disableOnInteraction: false,
             },
+        });
+
+        var swiper = new Swiper(".special-products-swiper", {
+            slidesPerView: 3,
+            loop: true,
+            grid: {
+                rows: 2,
+            },
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        $('.swiper-button-prev').hide();
+        $('.swiper-button-next').hide();
+        $('.special-products-swiper').mouseenter(function(){
+            $('.swiper-button-next').show('bounce');
+        })
+        $('.special-products-swiper').mouseleave(function(){
+            $('.swiper-button-next').fadeOut();
+        });
+        $('.swiper-button-next').on('click', function(){
+            $('.swiper-button-prev').fadeIn();
         });
 
     });
