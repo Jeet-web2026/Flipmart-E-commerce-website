@@ -997,7 +997,7 @@
             $('.swiper-button-next').show('bounce');
         })
         $('.special-products-swiper').mouseleave(function(){
-            $('.swiper-button-next').fadeOut();
+            $('.swiper-button-next, .swiper-button-prev').fadeOut();
         });
         $('.swiper-button-next').on('click', function(){
             $('.swiper-button-prev').fadeIn();
