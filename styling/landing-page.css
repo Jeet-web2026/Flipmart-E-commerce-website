@@ -40,6 +40,7 @@ nav {
 
 body {
     background-color: #e1e1e1;
+    position: relative;
 }
 
 /* navbar end */
@@ -161,7 +162,7 @@ body {
 
 #content .responsive-slickSlider-withcategories .slick-next {
     position: absolute;
-    top: -8%;
+    top: -6%;
     right: 1%;
     background-color: #F6720E;
     width: 27px;
@@ -170,7 +171,7 @@ body {
 
 #content .responsive-slickSlider-withcategories .slick-prev {
     position: absolute;
-    top: -8%;
+    top: -6%;
     left: 94%;
     background-color: #F6720E;
     width: 27px;
@@ -202,40 +203,47 @@ body {
 }
 
 /* amezing-products end */
+#special-products .single-item-slick .slick-next {
+    top: -5%;
+    right: 2%;
+    background-color: #111;
+    height: 27px;
+    width: 25px;
+}
+
+#special-products .single-item-slick .slick-prev {
+    top: -5%;
+    left: 85%;
+    background-color: #111;
+    z-index: 1;
+    height: 27px;
+    width: 25px;
+}
+
+#special-products .single-item-slick img {
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 15px;
+}
 
 /* special-products start */
-#special-products .swiper {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+#special-products .special-products-items .slick-next {
+    position: absolute;
+    top: -6%;
+    right: 1%;
+    background-color: #F6720E;
+    width: 27px;
+    height: 27px;
 }
 
-#special-products .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    height: calc((100% - 30px) / 2) !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#special-products .swiper-button-next {
-    color: #F6720E;
-    background-color: #fff;
-    padding: 30px;
-    border: 1px solid #f6720e;
-    border-radius: 50%;
-    right: 0%;
-}
-#special-products .swiper-button-prev {
-    color: #F6720E;
-    background-color: #fff;
-    padding: 30px;
-    border: 1px solid #f6720e;
-    border-radius: 50%;
-    left: 0%;
+#special-products .special-products-items .slick-prev {
+    position: absolute;
+    top: -6%;
+    left: 94%;
+    background-color: #F6720E;
+    width: 27px;
+    height: 27px;
 }
 
 /* special-products end */
