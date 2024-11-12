@@ -195,4 +195,10 @@ body {
     height: 38.2vh;
 }
 
+#amezing-products .col-md-3 .justify-content-start img{
+    height: 60px;
+    border-radius: 50%;
+    width: 60px;
+}
+
 /* amezing-products end */
