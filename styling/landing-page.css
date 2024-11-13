@@ -267,3 +267,30 @@ body {
 }
 
 /* special-products end */
+
+/* reviews start */
+#reviews .col-md-9 .responsive-review-slider img {
+    height: 175px;
+    width: 100%;
+    border-radius: 0px;
+}
+
+#reviews .col-md-9 .responsive-review-slider .slick-next {
+    position: absolute;
+    top: -8%;
+    right: 1%;
+    background-color: #F6720E;
+    width: 27px;
+    height: 27px;
+}
+
+#reviews .col-md-9 .responsive-review-slider .slick-prev {
+    position: absolute;
+    top: -8%;
+    left: 94%;
+    background-color: #F6720E;
+    width: 27px;
+    height: 27px;
+}
+
+/* reviews end */
