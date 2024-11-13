@@ -260,6 +260,10 @@ body {
 #special-products .special-products-items .card-body {
     position: absolute;
     opacity: 0;
+    background-color: #1111118a;
+    transition: 0.3s ease-in-out;
+    top: 0;
+    bottom: 4%;
 }
 
 /* special-products end */
