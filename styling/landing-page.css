@@ -203,8 +203,10 @@ body {
 }
 
 /* amezing-products end */
+
+/* special-products start */
 #special-products .single-item-slick .slick-next {
-    top: -5%;
+    top: -4%;
     right: 2%;
     background-color: #111;
     height: 27px;
@@ -212,7 +214,7 @@ body {
 }
 
 #special-products .single-item-slick .slick-prev {
-    top: -5%;
+    top: -4%;
     left: 85%;
     background-color: #111;
     z-index: 1;
@@ -227,10 +229,9 @@ body {
     margin-right: 15px;
 }
 
-/* special-products start */
 #special-products .special-products-items .slick-next {
     position: absolute;
-    top: -6%;
+    top: -5%;
     right: 1%;
     background-color: #F6720E;
     width: 27px;
@@ -239,11 +240,26 @@ body {
 
 #special-products .special-products-items .slick-prev {
     position: absolute;
-    top: -6%;
+    top: -5%;
     left: 94%;
     background-color: #F6720E;
     width: 27px;
     height: 27px;
+}
+
+#special-products .special-products-items .card img {
+    height: 19.404915912031047vh;
+    width: 87.5%;
+    border-radius: 35px;
+}
+
+#special-products .special-products-items .card {
+    background-color: #f7f7f7;
+}
+
+#special-products .special-products-items .card-body {
+    position: absolute;
+    opacity: 0;
 }
 
 /* special-products end */
