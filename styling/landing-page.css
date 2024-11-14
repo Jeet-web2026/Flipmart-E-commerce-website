@@ -294,3 +294,29 @@ body {
 }
 
 /* reviews end */
+
+/* latest-brands start */
+#latest-brands .latest-brands-slider .card img{
+    height: 100px;
+    width: 100%;
+    border-radius: 0px;
+}
+
+#latest-brands .latest-brands-slider .slick-next {
+    position: absolute;
+    top: -25%;
+    right: 1%;
+    background-color: #F6720E;
+    width: 27px;
+    height: 27px;
+}
+
+#latest-brands .latest-brands-slider .slick-prev {
+    position: absolute;
+    top: -25%;
+    left: 95%;
+    background-color: #F6720E;
+    width: 27px;
+    height: 27px;
+}
+/* latest-brands end */
