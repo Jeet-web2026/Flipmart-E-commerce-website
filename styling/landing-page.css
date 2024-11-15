@@ -23,6 +23,10 @@
     border-radius: 0px;
 }
 
+.no-list-style{
+    list-style: none;
+}
+
 /* universal css styling */
 
 /* navbar start */
@@ -320,3 +324,17 @@ body {
     height: 27px;
 }
 /* latest-brands end */
+
+/* footer start */
+#footer .container-fluid{
+    background-color: #111;
+}
+#footer .card-body ul li a{
+    color: #fff;
+}
+
+#footer .card-body ul li a:hover{
+    color: #F6720E;
+    transition: 0.3s ease-in-out;
+}
+/* footer end */
