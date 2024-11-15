@@ -23,7 +23,7 @@
     border-radius: 0px;
 }
 
-.no-list-style{
+.no-list-style {
     list-style: none;
 }
 
@@ -300,7 +300,7 @@ body {
 /* reviews end */
 
 /* latest-brands start */
-#latest-brands .latest-brands-slider .card img{
+#latest-brands .latest-brands-slider .card img {
     height: 100px;
     width: 100%;
     border-radius: 0px;
@@ -323,18 +323,60 @@ body {
     width: 27px;
     height: 27px;
 }
+
 /* latest-brands end */
 
 /* footer start */
-#footer .container-fluid{
+#footer .container-fluid {
     background-color: #111;
 }
-#footer .card-body ul li a{
+
+#footer .card-body ul li a {
     color: #fff;
 }
 
-#footer .card-body ul li a:hover{
+#footer .card-body ul li a:hover {
     color: #F6720E;
     transition: 0.3s ease-in-out;
 }
+
 /* footer end */
+
+
+/*----------------------- responsive view --------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+/* navbar */
+.w-50{
+    width: 100% !important;
+}
+
+#mid-nav .montserrat-font{
+    margin-left: 30% !important;
+}
+/* navbar */
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/*----------------------- responsive view --------------------------- */

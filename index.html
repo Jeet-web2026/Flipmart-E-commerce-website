@@ -57,7 +57,7 @@
 
     <!-- top nav start -->
     <section id="top-nav">
-        <div class="container-fluid px-lg-5 px-3">
+        <div class="container-fluid px-lg-5 px-2">
             <div class="card border-0 bg-transparent">
                 <div class="card-body pb-1 px-0">
                     <div class="row align-items-center">
@@ -83,11 +83,11 @@
 
     <!-- mid nav start -->
     <section id="mid-nav">
-        <div class="container-fluid px-5">
-            <div class="d-flex justify-content-between align-items-center">
+        <div class="container-fluid px-lg-5 px-2">
+            <div class="d-lg-flex justify-content-between align-items-center">
                 <a href="" class="text-light fs-1 no-decoration montserrat-font font-500">Flip<span
                         style="color: #ffd400;">Mart</span><i class="fa-brands fa-opencart ms-2 text-warning"></i></a>
-                <form class="input-group w-50">
+                <form class="input-group w-50 mb-lg-0 mb-2">
                     <input type="text" class="form-control shadow-none border-0" style="border-radius: 0px;"
                         placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
                     <button type="submit" class="input-group-text bg-dark shadow-none border-0"
@@ -101,7 +101,7 @@
                     <p class="mb-0 font-500"><button type="button"
                             class="text-capitalize no-decoration text-light btn shadow-none position-relative border-0"><i
                                 class="bi bi-cart-plus me-2"></i>my cart<span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-circle px-2 pt-2 pb-1"
+                                class="position-absolute d-none d-lg-inline top-0 start-100 translate-middle badge rounded-circle px-2 pt-2 pb-1"
                                 style="background-color: #51463E;"><span>1</span></span></button></p>
                 </div>
             </div>
@@ -111,11 +111,11 @@
 
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg pb-0">
-        <div class="container-fluid mx-5 bg-dark">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <div class="container-fluid mx-lg-5 bg-dark">
+            <button class="navbar-toggler mx-lg-0 mx-auto text-light border-0 shadow-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-plus py-2 fs-1" style="color: #fff;"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -141,7 +141,7 @@
                         <a class="nav-link text-light text-uppercase" href="#">Blogs</a>
                     </li>
                 </ul>
-                <ul class="mb-0">
+                <ul class="mb-0 ps-0">
                     <li class="nav-item">
                         <a class="nav-link text-light text-uppercase" href="#"><i
                                 class="bi bi-telephone me-2 fs-5"></i>call us +91
@@ -1647,9 +1647,9 @@
     <!-- live-map end -->
 
     <!-- copyright start -->
-     <center class="pb-2">
+    <center class="pb-2">
         <p class="mb-0 text-capitalize text-dark font-500">copyright @ Jeet-web2026 || 2024</p>
-     </center>
+    </center>
     <!-- copyright end -->
 
 
@@ -1986,6 +1986,15 @@
             });
         });
 
+        let navBUTTON = $('.navbar-toggler').find('.fa-plus');
+
+        navBUTTON.on('click', function () {
+            if ($(this).hasClass('fa-plus')) {
+                $(this).removeClass('fa-plus').addClass('fa-minus');
+            } else {
+                $(this).removeClass('fa-minus').addClass('fa-plus');
+            }
+        });
 
 
     });
