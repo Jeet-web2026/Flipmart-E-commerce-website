@@ -152,7 +152,7 @@ body {
 
 #content .col-md-9 .responsive-slickSlider-withcategories .card img {
     height: 19.404915912031047vh;
-    width: 87.5%;
+    width: 100%;
     border-radius: 0px;
 }
 
@@ -364,6 +364,15 @@ body {
 
     #content .responsive-slickSlider-withcategories .slick-prev {
         left: 92%;
+    }
+
+    #main-body .ui-menu .ui-front {
+        position: absolute;
+        left: 0% !important;
+        background-color: #eee3db;
+        top: -23% !important;
+        width: 100%;
+        transition: 0.5s ease-in-out;
     }
 
     /* content */

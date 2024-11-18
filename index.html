@@ -2006,7 +2006,15 @@
             }
         });
 
+        let screenWidth = $(window).width();
 
+        if(screenWidth < 600){
+            $('#categories').hide();
+        }
+
+        $('#main-body .navbar-toggler').on('click', function(){
+            $('#categories').show();
+        });
 
     });
 </script>
