@@ -69,10 +69,17 @@
                             <p class="mb-0 font-500"><button
                                     class="text-capitalize no-decoration text-light btn shadow-none border-0"><i
                                         class="bi bi-geo-alt me-2"></i>update location</button></p>
-                            <p class="mb-0 font-500"><button
-                                    class="text-capitalize no-decoration text-light btn shadow-none border-0"><i
-                                        class="bi bi-translate me-2"></i>language<i
-                                        class="bi bi-chevron-down ms-2"></i></button></p>
+                            <div class="dropdown">
+                                <button class="btn text-capitalize text-light shadow-none border-0" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    language<i class="bi bi-translate ms-2"></i>
+                                </button>
+                                <ul class="dropdown-menu border-0" style="border-radius: 0px; background-color: bisque !important;">
+                                    <li><a class="dropdown-item text-dark" href="#">English</a></li>
+                                    <li><a class="dropdown-item text-dark" href="#">Hindi</a></li>
+                                    <li><a class="dropdown-item text-dark" href="#">Bengali</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2008,11 +2015,11 @@
 
         let screenWidth = $(window).width();
 
-        if(screenWidth < 600){
+        if (screenWidth < 600) {
             $('#categories').hide();
         }
 
-        $('#main-body .navbar-toggler').on('click', function(){
+        $('#main-body .navbar-toggler').on('click', function () {
             $('#categories').show();
         });
 
